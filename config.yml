@@ -1,6 +1,6 @@
-baseURL: "https://examplesite.com"
-title: ExampleSite
-paginate: 5
+baseURL: "https://blog.kis9a.com"
+title: kis9a - blog
+paginate: 6
 theme: hugo-PaperMod
 
 enableRobotsTXT: true
@@ -8,28 +8,31 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
-
 minify:
     disableXML: true
     minifyOutput: true
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    author: Me
-    # author: ["Me", "You"] # multiple authors
+    title: kis9a - blog
+    description: "kis9a blog site for output articles contents | blog.kis9a.com | github.com"
+    # author: kis9a
 
     images: "<link or path of image for opengraph, twitter-cards>"
-
-    ShowReadingTime: true
-    ShowShareButtons: true
+    draft: false
+    ShowToc: false
+    TocOpen: false
+    hidemeta: false
+    disableShare: true
+    ShowReadingTime: false
+    ShowShareButtons: false
+    ShowCopyright: false;
     comments: false
-    defaultTheme: auto
-    disableThemeToggle: false
-    disableSpecial1stPost: false
-
+    defaultTheme: light
+    homeInfoParams: false
+    hideSummary: true
+    disableThemeToggle: true
+    disableSpecial1stPost: true
     assets:
         favicon: "<link / abs url>"
         favicon16x16: "<link / abs url>"
@@ -38,50 +41,14 @@ params:
         safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: "Home"
-        icon: /apple-touch-icon.png
-        iconHeight: 35
+        text: "kis9a"
+        icon: false
 
-    # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
-        title: ExampleSite
-        # imageUrl: '<img location>'
-        # imageTitle: my image
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
-
-    # home-info mode
-    homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
-
-    socialIcons:
-        - name: twitter
-          url: "https://twitter.com/"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
-        - name: github
-          url: "https://github.com/"
-
-    analytics:
-        google:
-            SiteVerificationTag: "XYZabc"
 
 menu:
     main:
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 10
         - identifier: tags
           name: tags
           url: /tags/
-          weight: 20
-        - identifier: example
-          name: example.org
-          url: https://example.org
-          weight: 30
