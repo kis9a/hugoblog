@@ -46,9 +46,3 @@ params:
 
     profileMode:
         enabled: false # needs to be explicitly set
-
-menu:
-    main:
-        - identifier: tags
-          name: tags
-          url: /tags/
