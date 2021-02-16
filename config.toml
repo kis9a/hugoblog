@@ -16,5 +16,4 @@ home = ["HTML", "RSS", "JSON"]
 weight = 2
 identifier = "search"
 name = "Search"
-pre = "<i class=\"sidebar-button-icon fas fa-lg fa-search\"></i>"
 url = "/search"
