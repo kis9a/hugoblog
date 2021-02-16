@@ -1,9 +1,0 @@
-#http://nav.kis9a.com/ baseURL: "https://blog.kis9a.com"
-title: "kis9a - blog"
-
-params:
-  thumbnail: "kis9a.jpg"
-  title: "kis9a - blog"
-  description: "kis9a blog site | blog.kis9a.com"
-  author: "kis9a"
-  avatar: "https://avatars2.githubusercontent.com/u/65019715?s=400&u=731fbe172c33e4511a105e3cc5e697c9e3c87fd3&v=4"
