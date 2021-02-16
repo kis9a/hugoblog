@@ -1,7 +1,6 @@
 baseURL: "https://blog.kis9a.com"
 title: kis9a - blog
 paginate: 6
-theme: hugo-kis9a
 
 enableRobotsTXT: true
 buildDrafts: false
