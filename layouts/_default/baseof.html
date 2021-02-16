@@ -8,6 +8,11 @@
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
+  <!-- {{- $common := (resources.Match "css/*.css") | relURL }} -->
+  <!-- {{- $stylesheet := (slice $common) | relURL }} -->
+
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
@@ -64,7 +69,6 @@
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css"
   />
   {{ end }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
   {{ if .Site.RSSLink }}
   <link
     href="{{ .Site.RSSLink }}"
