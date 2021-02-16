@@ -1,7 +1,7 @@
 {
-  "name": "kis9a - navigation",
-  "short_name": "nav.kis9a",
-  "description": "kis9a navigation site for introduction personal activitie links | nav.kis9a.com",
+  "name": "kis9a - blog",
+  "short_name": "blog.kis9a",
+  "description": "kis9a blog site blog.kis9a.com",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any",
