@@ -2,7 +2,8 @@ baseURL = "https://blog.kis9a.com/"
 title = "kis9a - blog"
 
 [params]
-thumbnail= "kis9a.jpg"
+thumbnail = "kis9a.jpg"
+favicon = "favicon.ico"
 title = "kis9a - blog"
 description = "kis9a blog site | blog.kis9a.com"
 author = "kis9a"
