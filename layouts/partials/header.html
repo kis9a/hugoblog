@@ -1,10 +1,14 @@
 <header>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+	<a href="{{ .Site.BaseURL }}">{{ .Params.Title }}{{ .Site.Title }}</a>
 	{{ with .Site.Menus.main }}
 	<nav>
 		<ul>
 			{{ range . }}
 			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+
 			{{ end }}
 		</ul>
 	</nav>

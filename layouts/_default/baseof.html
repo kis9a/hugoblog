@@ -4,16 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ .Site.Title }} {{ .Title }}</title>
+  <title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-
-  {{ $scss := resources.Get "scss/style.scss" }}
-  {{ $style := $scss | resources.ToCSS | resources.Minify }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
-  {{- $opts := dict "minify" hugo.IsProduction -}}
-
-
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
@@ -70,6 +63,13 @@
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css"
   />
   {{ end }}
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  {{ $scss := resources.Get "scss/style.scss" }}
+  {{ $style := $scss | resources.ToCSS | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{- $opts := dict "minify" hugo.IsProduction -}}
+
   {{ if .Site.RSSLink }}
   <link
     href="{{ .Site.RSSLink }}"
@@ -123,6 +123,6 @@
 <body>
 	{{ partial "header" . }}
 	{{ block "main" . }}{{ end }}
-	{{ partial "footer" . }}
+	<!-- {{ partial "footer" . }} -->
 </body>
 </html>
