@@ -11,6 +11,8 @@
   {{ $scss := resources.Get "scss/style.scss" }}
   {{ $style := $scss | resources.ToCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{- $opts := dict "minify" hugo.IsProduction -}}
+
 
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
