@@ -9,12 +9,24 @@ description = "kis9a blog site | blog.kis9a.com"
 author = "kis9a"
 avatar = "https://avatars2.githubusercontent.com/u/65019715?s=400&u=731fbe172c33e4511a105e3cc5e697c9e3c87fd3&v=4"
 
+[[params.nav]]
+url = "/search"
+fa_icon = "fa-search"
+
+[[params.nav]]
+url = "/tags"
+fa_icon = "fa-hashtag"
+
+[[params.link]]
+url = "https://nav.kis9a.com"
+fa_icon = "fa-link"
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
 [[menu.main]]
-pre = "<i class='fas fa-search'></i>"
-weight = 2
 identifier = "search"
+pre = "<i class='fas fa-info'></i>"
 title = "Search"
 url = "/search"
+weight = 4
