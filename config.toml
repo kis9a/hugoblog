@@ -1,5 +1,6 @@
 baseURL = "https://blog.kis9a.com/"
 title = "kis9a"
+description = "kis9a blog site | blog.kis9a.com"
 theme = "kiss"
 
 [params]
