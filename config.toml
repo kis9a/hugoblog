@@ -1,5 +1,13 @@
 baseURL = "https://blog.kis9a.com/"
-title = "kis9a - blog"
+title = "kis9a"
+description = "kis9a blog site | blog.kis9a.com"
+theme = "kiss"
+languageCode = "en"
+copyright = "&copy; <a href=\"http://github.com/kis9a\">kis9a</a> 2021"
+disqusShortname = "kis9a"
+googleAnalytics = ""
+Paginate = 8
+enableRobotsTXT = true
 
 [params]
 thumbnail = "kis9a.jpg"
@@ -30,3 +38,32 @@ pre = "<i class='fas fa-info'></i>"
 title = "Search"
 url = "/search"
 weight = 4
+
+[params.rss]
+includeContent = true
+authorName = "kis9a"
+authorEmail = "kis9ax@gmail.com"
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = ""
+enableSocial = true
+homeTitle = ""
+related = true
+codeCopy = true
+taxonomiesCount = true
+
+[params.social]
+twitter = "kis9a"
+github = "kis9a"
+email = ""
+linkedin = ""
+facebook = ""
+instagram = ""
+codepen = ""
+rss = "index.xml"
+
+[params.social.config]
+platforms = ["github","twitter"]
